@@ -2,7 +2,8 @@ import React from "react";
 // import CurrentStory from "./components/current-story";
 import "./App.css";
 // import Counter from "./components/counter";
-import UserInfo from "./components/user-info";
+// import UserInfo from "./components/user-info";
+import GoogleSearchResult from './components/google-search-result.js'
 
 // export default function App() {
 //   return (
@@ -18,19 +19,28 @@ import UserInfo from "./components/user-info";
 //   )s
 // }
 
-export default function App() {
+// export default function App() {
+//   return (
+//     <div>
+//       <UserInfo
+//         userName="Abdullah"
+//         institute="NED"
+//         course="Civil Engineering"
+//       />
+//       <UserInfo
+//         userName="Haider"
+//         organization="Saylani"
+//         designation="Teacher"
+//       />
+//     </div>
+//   );
+
+function App() {
   return (
-    <div>
-      <UserInfo
-        userName="Abdullah"
-        institute="NED"
-        course="Civil Engineering"
-      />
-      <UserInfo
-        userName="Haider"
-        organization="Saylani"
-        designation="Teacher"
-      />
-    </div>
-  );
+    <GoogleSearchResult />
+  )
 }
+
+
+
+export default App
